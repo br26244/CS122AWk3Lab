@@ -1,2 +1,23 @@
-set_io clk 35
+set_io clk   35
 set_frequency clk 12
+
+# Buttons (active-low)
+set_io btnR  3   # RED  LED button
+set_io btnB  6    # BLUE LED button  
+
+# DIP switch
+set_io dipSw 2    # 0 = show RED, 1 = show BLUE (verify pin for your board)
+
+# PWM-controlled LEDs
+set_io ledR 40    # onboard red  LED
+set_io ledB 39    # onboard blue LED
+
+# 7-segment display on PMOD header (verify pins match your wiring)
+set_io seg7[7] 46    # segment a (top)
+set_io seg7[6] 45    # segment b (top-right)
+set_io seg7[5] 23    # segment c (bottom-right)
+set_io seg7[4] 25    # segment d (bottom)
+set_io seg7[3] 26    # segment e (bottom-left)
+set_io seg7[2] 44    # segment f (top-left)
+set_io seg7[1] 43    # segment g (middle)
+set_io seg7[0] 27    # decimal point
