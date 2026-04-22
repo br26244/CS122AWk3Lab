@@ -22,13 +22,13 @@ always_comb begin
         4'd13: seg7 = 8'b01111010; // d
         4'd14: seg7 = 8'b10011110; // E
         4'd15: seg7 = 8'b10001110; // F
-        default: seg7 = 8'b00000000; // Blank
+        default: seg7 = 8'b00000000; 
     endcase
 
     if(decimal) begin
-        seg7[0] = 1; // Turn on the decimal point
+        seg7[0] = 1; 
     end else begin
-        seg7[0] = 0; // Turn off the decimal point
+        seg7[0] = 0; 
     end
 
 
